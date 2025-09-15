@@ -3,5 +3,19 @@
   "queries": [
     "GAT training acceleration",
     "Graph Attention Network parallelization"
+  ],
+  "research_study_list": [
+    {
+      "title": "GACT: Activation Compressed Training for Generic Network Architectures"
+    },
+    {
+      "title": "GACT: Activation Compressed Training for Generic Network Architectures"
+    },
+    {
+      "title": "FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning"
+    },
+    {
+      "title": "Bandit Samplers for Training Graph Neural Networks"
+    }
   ]
 }
