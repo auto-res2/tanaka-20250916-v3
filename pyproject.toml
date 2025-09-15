@@ -1,1 +1,21 @@
-# Please list the required python packages.
+[project]
+name = "dynamic-flash-gat"
+version = "0.0.1"
+description = "Refactored Dynamic-FlashGAT experiment (stub – original code missing)"
+authors = [
+  { name = "Auto-generated", email = "noreply@example.com" }
+]
+requires-python = ">=3.9"
+
+[project.optional-dependencies]
+# No extras – core experiment code is absent
+
+[build-system]
+requires = ["setuptools>=65.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+dependencies = [
+    "pyyaml>=6.0",
+    "torch>=1.9.0",
+    "numpy>=1.21.0",
+]

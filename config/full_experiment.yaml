@@ -1,0 +1,9 @@
+# config/full_experiment.yaml
+# Placeholder full-scale configuration stub.  Like the smoke test
+# counterpart, this file exists only to satisfy CLI argument parsing.
+experiment: full_experiment
+dataset: ogbn-products
+model: DynamicFlashGAT
+training:
+  epochs: 3
+  batch_size: 1024
