@@ -1,0 +1,14 @@
+Using CPython 3.11.13
+Creating virtual environment at: .venv
+Resolved 1 package in 10ms
+   Building dynamic-flash-gat @ file:///home/toma/pt-80-1-a-13/_work/tanaka-20250916-v3/tanaka-20250916-v3
+      Built dynamic-flash-gat @ file:///home/toma/pt-80-1-a-13/_work/tanaka-20250916-v3/tanaka-20250916-v3
+Prepared 1 package in 3.25s
+Installed 1 package in 15ms
+ + dynamic-flash-gat==0.0.1 (from file:///home/toma/pt-80-1-a-13/_work/tanaka-20250916-v3/tanaka-20250916-v3)
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/toma/pt-80-1-a-13/_work/tanaka-20250916-v3/tanaka-20250916-v3/src/main.py", line 14, in <module>
+    import yaml
+ModuleNotFoundError: No module named 'yaml'
