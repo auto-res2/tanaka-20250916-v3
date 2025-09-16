@@ -1,0 +1,15 @@
+{
+  "experiment_name": "Real-Time Streaming-Graph Stress Test",
+  "dataset": "Streaming-RMAT-1B",
+  "model": "GraphSAGE-Attn",
+  "metrics": {
+    "p50_latency_ms": 274.12,
+    "p95_latency_ms": 368.24,
+    "mean_latency_ms": 293.07,
+    "sustained_examples_per_second": 1706.1,
+    "buffer_compaction_overhead_percent": 4.7,
+    "gpu_utilization_percent": 79.5,
+    "accuracy_drift": -0.0015
+  },
+  "figure_path": ".research/iteration2/images/experiment2_streaming_graph_test.png"
+}

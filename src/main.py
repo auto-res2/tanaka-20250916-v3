@@ -41,10 +41,13 @@ def run_phase(cfg_path: Path) -> None:
     """Run a single experiment phase given a YAML file."""
     cfg = load_cfg(cfg_path)
 
-    # The following calls will immediately raise because the modules are stubs.
-    preprocess(cfg)
-    train(cfg)
-    evaluate(cfg)
+    preprocessing_results = preprocess(cfg)
+    
+    cfg["datasets"] = preprocessing_results["datasets"]
+    training_results = train(cfg)
+    
+    cfg["training_results"] = training_results
+    evaluation_results = evaluate(cfg)
 
 
 def main() -> None:  # pragma: no cover – CLI only

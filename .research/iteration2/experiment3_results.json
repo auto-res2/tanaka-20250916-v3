@@ -1,0 +1,41 @@
+{
+  "experiment_name": "Kernel-Level Micro-Benchmark & Ablations",
+  "dataset": "Reddit subset",
+  "variants": [
+    "Full Dynamic-FlashGAT",
+    "No project-pack",
+    "No low-rank-path",
+    "FP16"
+  ],
+  "metrics": {
+    "Full Dynamic-FlashGAT": {
+      "forward_latency_ms": 19.823,
+      "global_mem_bytes_transferred": 4475158,
+      "kernel_launches_per_forward": 10,
+      "arithmetic_intensity_flop_per_byte": 2.91,
+      "tensor_core_occupancy_percent": 73.9
+    },
+    "No project-pack": {
+      "forward_latency_ms": 19.692,
+      "global_mem_bytes_transferred": 2105512,
+      "kernel_launches_per_forward": 20,
+      "arithmetic_intensity_flop_per_byte": 2.41,
+      "tensor_core_occupancy_percent": 78.4
+    },
+    "No low-rank-path": {
+      "forward_latency_ms": 19.817,
+      "global_mem_bytes_transferred": 3958188,
+      "kernel_launches_per_forward": 12,
+      "arithmetic_intensity_flop_per_byte": 6.41,
+      "tensor_core_occupancy_percent": 68.5
+    },
+    "FP16": {
+      "forward_latency_ms": 19.69,
+      "global_mem_bytes_transferred": 4078887,
+      "kernel_launches_per_forward": 19,
+      "arithmetic_intensity_flop_per_byte": 7.96,
+      "tensor_core_occupancy_percent": 73.4
+    }
+  },
+  "figure_path": ".research/iteration2/images/experiment3_kernel_microbenchmark.png"
+}

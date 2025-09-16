@@ -1,0 +1,15 @@
+{
+  "datasets_loaded": [
+    "ogbn_products",
+    "ogbn_papers100m",
+    "reddit",
+    "streaming_rmat"
+  ],
+  "ogbn_products_nodes": 1000,
+  "ogbn_products_edges": 9947,
+  "reddit_nodes": 500,
+  "reddit_edges": 4950,
+  "streaming_chunks": 10,
+  "output_dir": ".research/iteration2",
+  "images_dir": ".research/iteration2/images"
+}

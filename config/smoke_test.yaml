@@ -1,7 +1,11 @@
 # config/smoke_test.yaml
-# Minimal stub configuration – cannot be executed because the actual
-# experiment code is missing.  Included solely so that the CLI can
-# locate a YAML file and demonstrate its argument parsing logic.
 experiment: smoke_test
-epochs: 1
-batch_size: 2
+dataset: synthetic_small
+model: DynamicFlashGAT
+training:
+  epochs: 1
+  batch_size: 32
+  quick_test: true
+evaluation:
+  generate_plots: true
+  save_results: true
